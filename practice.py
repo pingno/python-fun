@@ -52,3 +52,21 @@ print(x(5))
 
 #func_name = lambda arg : func
 #output 15
+
+
+#lambda function is a small anonymous function
+# a lambda function can take any number of arguments, but can only have on expression
+
+x2 = lambda a, b : a * b
+print(x2(5,6))
+
+# Why use lambdas? ex anonymous lambda function inside another function
+
+def myFunc(n):
+    return lambda a : a * n
+
+mydoubler = myFunc(2)
+print(mydoubler(11)) # n == 2, a == 11
+
+mytripler = myFunc(3)
+print(mytripler(15)) # n == 3, a == 15
