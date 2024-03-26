@@ -79,7 +79,20 @@ class Person:
         self.name = name
         self.age = age
 
+    def __str__(self):
+        return f"{self.name}({self.age})"
+    
+    def myfunc(self):
+        print("Hello my name is " + self.name)
+
 
 p1 = Person("John", 36)
 print(p1.name)
 print(p1.age)
+
+# __str__() function controls what should be returned when the class object is represented as a string
+# if the __str__() function is not set, the string representation of the object is returned
+
+print(p1) #outputs John(36)
+
+p1.myfunc() # "Hello my name is John"
