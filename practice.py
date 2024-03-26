@@ -70,3 +70,16 @@ print(mydoubler(11)) # n == 2, a == 11
 
 mytripler = myFunc(3)
 print(mytripler(15)) # n == 3, a == 15
+
+
+# Classes
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+p1 = Person("John", 36)
+print(p1.name)
+print(p1.age)
