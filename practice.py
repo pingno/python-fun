@@ -96,3 +96,12 @@ print(p1.age)
 print(p1) #outputs John(36)
 
 p1.myfunc() # "Hello my name is John"
+
+# Creating a child class
+# to create a class that inherits the functionality from another, send the parent class as a parameter
+
+class Student(Person):
+    pass
+
+timmy = Student("Mike", "Olsen")
+timmy.myfunc()
