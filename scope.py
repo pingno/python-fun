@@ -16,3 +16,19 @@ def myfunc2():
     myinnerfunc()
 
 myfunc2()
+
+
+# Global Scope
+# a variable created in the main body of the Python code is a global variable and belongs to the global scope.
+# Global variables are available from withhin any scope, global and local
+
+# a variable created outside of a function is global and can be used by anyone:
+
+y = 300
+
+def myfunc3():
+    print(y)
+
+myfunc3()
+
+print(y)
