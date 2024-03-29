@@ -105,3 +105,22 @@ class Student(Person):
 
 timmy = Student("Mike", "Olsen")
 timmy.myfunc()
+
+
+#iterator vs iterable
+# lists, tuples, dictionaries, and sets are all iterable objects
+# they are iterable containers which you can get an iterator from
+
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
+
+print(next(myit)) # apple
+print(next(myit)) # banana
+print(next(myit)) # cherry
+
+for x in mytuple:
+    print(x)
+
+mystr = "banana"
+for x in mystr:
+    print(x) #iterate the characters of a string:
