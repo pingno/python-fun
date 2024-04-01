@@ -124,3 +124,26 @@ for x in mytuple:
 mystr = "banana"
 for x in mystr:
     print(x) #iterate the characters of a string:
+
+
+
+
+
+class Car:
+    def __init__(self, model, make, year):
+        self.model = model
+        self.make = make
+        self.year = year
+    
+    def car_year(self):
+        print("the year for this car is " + self.year )
+
+    def car_model(self):
+        print("the model for this car is " + self.model)
+
+
+    def car_make(self):
+        print("the make for this car is " + self.make)
+
+    def whatsmycar(self):
+        print("This is the car you own " + self.model + self.make + self.year)
