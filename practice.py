@@ -147,3 +147,30 @@ class Car:
 
     def whatsmycar(self):
         print("This is the car you own " + self.model + self.make + self.year)
+
+
+
+
+class Anime:
+    def __init__(self, title, genre, episodes, rating):
+        self.title = title
+        self.genre = genre
+        self.episodes = episodes
+        self.rating = rating
+
+    def __str__(self):
+        return f"{self.title}({self.genre})"
+    
+    def anime_name(self):
+        print("The anime's name is " + self.title)
+    
+    def anime_genre(self):
+        print("The anime's genre is from " + self.genre)
+
+    def anime_ep(self):
+        print("There are " + self.episodes + "episodes")
+
+    def rating(self):
+        print("This anime has a rating of " + self.rating)
+
+        
