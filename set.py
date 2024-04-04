@@ -34,3 +34,26 @@ print(thisset)
 
 # Can also add any iterable object such as tuples, lists, dictionairies etc.
 
+
+# Remove items from a Set
+# you can use the remove() or discard() method
+
+thisset.remove("apple")
+
+# you can also use pop() but it removes a random item
+# clear() will empty the set
+# del thisset will delete the set complettely
+
+
+for x in thisset:
+    print(x)
+
+
+
+# union() and update() methods join all tiems from both sets
+
+# intersection() method keeps ONLY the duplicates
+
+# difference() method keeps the items from the first set that are not in the other set(s)
+
+# symmetric_difference() method keeps all items EXCEPT the duplicates
