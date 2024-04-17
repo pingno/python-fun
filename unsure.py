@@ -86,3 +86,27 @@ reverse() - reverse the order of the list
 sort() - sorts the list
 
 '''
+
+
+groceries = []
+
+def addGroceries(item):
+    groceries.append(item)
+    print(f"{item} has been added to the groceries list. ")
+
+def clearGroceries():
+    groceries.clear()
+    print("Groceries list has been emptied")
+
+def showGroceries():
+    print("These are your groceries")
+    for x in groceries:
+        print(x)
+
+def remove(item):
+    if item in groceries:
+        groceries.remove(item)
+        print("This item has been removed from your groceries list")
+    else:
+        print("could not find this item")
+
