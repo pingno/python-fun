@@ -88,7 +88,7 @@ sort() - sorts the list
 '''
 
 
-groceries = []
+groceries = ["apples", "cherry", "apples"]
 
 def addGroceries(item):
     groceries.append(item)
@@ -110,3 +110,11 @@ def remove(item):
     else:
         print("could not find this item")
 
+
+def countGroceries(item):
+    if item in groceries:
+        print(f"You have {groceries.count(item)} {item} in your list")
+    else:
+        print(f"Could not find any {item} in your list")
+
+countGroceries("greens")
