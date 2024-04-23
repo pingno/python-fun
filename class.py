@@ -55,3 +55,15 @@ class Cat:
         else:
             return f"{self.name} is not hungry"
         
+
+class Chicken:
+    def __init__(self, name, eggs, weight):
+        self.name = name
+        self.eggs = eggs
+        self.weight = weight
+
+    def chirp(self):
+        return "Chirp Chirp!"
+    
+    def numEggs(self):
+        return f"{self.name} has laid {self.eggs}"
