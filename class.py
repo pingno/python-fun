@@ -67,3 +67,6 @@ class Chicken:
     
     def numEggs(self):
         return f"{self.name} has laid {self.eggs}"
+    
+    def __str__(self):
+        return f"{self.name} weights about {self.weight} and has made {self.eggs} so far"
