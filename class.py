@@ -70,3 +70,43 @@ class Chicken:
     
     def __str__(self):
         return f"{self.name} weights about {self.weight} and has made {self.eggs} so far"
+
+
+
+class Coder:
+    def __init__(self, name, years_of_experience, languages, projects=None, additional_info=None):
+        self.name = name
+        self.years_of_experience = years_of_experience
+        self.languages = languages
+        self.projects = projects if projects else []
+        self.additional_info = additional_info if additional_info else {}
+
+    def add_project(self, project):
+        self.projects.append(project)
+
+    def add_additional_info(self, key, value):
+        self.additional_info[key] = value
+
+    def display_info(self):
+        print("Coder Name:", self.name)
+        print("Years of Experience:", self.years_of_experience)
+        print("Languages:", ', '.join(self.languages))
+        print("Projects:")
+        for project in self.projects:
+            print("- ", project)
+        print("Additional Info:")
+        for key, value in self.additional_info.items():
+            print("- {}: {}".format(key, value))
+
+
+# Example Usage:
+if __name__ == "__main__":
+    coder1 = Coder("John Doe", 5, ["Python", "Java", "JavaScript"], ["Project A", "Project B"])
+    coder1.add_additional_info("Education", "Bachelor's in Computer Science")
+    coder1.add_project("Project C")
+
+    coder2 = Coder("Jane Smith", 3, ["C++", "Python"], additional_info={"Hobby": "Gaming"})
+
+    coder1.display_info()
+    print("\n")
+    coder2.display_info()
