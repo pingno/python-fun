@@ -110,3 +110,16 @@ if __name__ == "__main__":
     coder1.display_info()
     print("\n")
     coder2.display_info()
+
+
+
+
+class Pokemon:
+    def __init__(self, name, lvl, type, health):
+        self.name = name
+        self.lvl = lvl
+        self.type = type
+        self.health = health
+
+charmander = Pokemon("charmander", 3, "Fire", 80)
+squirtle = Pokemon("Squirtle", 5, "Water", 80)
