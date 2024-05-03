@@ -123,3 +123,20 @@ class Pokemon:
 
 charmander = Pokemon("charmander", 3, "Fire", 80)
 squirtle = Pokemon("Squirtle", 5, "Water", 80)
+
+
+
+class StrawHatCrew:
+    def __init__(self, name, job, dream):
+        self.name = name
+        self.job = job
+        self.dream = dream
+
+zoro = StrawHatCrew("Roronoa Zoro", "first mate", "World's number one swordsman")
+sanji = StrawHatCrew("Vinsmoke Sanji", "cook", "to find the All Blue")
+luffy = StrawHatCrew("Monkey D. Luffy", "Captain", "Be the pirate king, find the one piece")
+nami = StrawHatCrew("Nami", "navigator", "to draw a map of the world")
+usopp = StrawHatCrew("Usopp", "snipe", "be a brave pirate of the sea")
+franky = StrawHatCrew("Franky", "shipwright", "to build a ship to go on countless adventures and reach laugh tale")
+robin = StrawHatCrew("Nico Robin", "archaeologist", "to find the meaning behind the void centure and Will of D")
+chopper = StrawHatCrew("Chopper", "Doctor", "To be able to cure anything")
