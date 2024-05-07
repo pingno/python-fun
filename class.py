@@ -140,3 +140,7 @@ usopp = StrawHatCrew("Usopp", "snipe", "be a brave pirate of the sea")
 franky = StrawHatCrew("Franky", "shipwright", "to build a ship to go on countless adventures and reach laugh tale")
 robin = StrawHatCrew("Nico Robin", "archaeologist", "to find the meaning behind the void centure and Will of D")
 chopper = StrawHatCrew("Chopper", "Doctor", "To be able to cure anything")
+
+
+#these are the strawhat pirates 
+# a class that i made 
