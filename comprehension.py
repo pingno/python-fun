@@ -47,3 +47,5 @@ print(even_or_odd)
 names = ['Alice', 'Bob', 'Charlie']
 name_dict = {name: len(name) for name in names}
 print(name_dict)
+
+

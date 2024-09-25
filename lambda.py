@@ -21,3 +21,6 @@ print(add(5, 5))
 
 
 
+# I need more practice using lambda
+
+add3 = lambda a,b,c : a + b + c
