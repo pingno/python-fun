@@ -9,4 +9,16 @@ for x in colors: #for each item in colors
         print(f"These colors {x} contain the letter a")
 
 
+for x in colors:
+    if len(x) > 4:
+        newlist.append(x)
+        print(f"the length of color {x} is longer than 4")
 
+
+numList = [1, 2, 3, 4 ,5]
+
+numList2 = [x*2 for x in numList if x % 2 == 0] #times 2
+print(numList2)
+
+numList3 = [x**2 for x in numList if x%2 == 0] #power of 2
+print(numList3)
