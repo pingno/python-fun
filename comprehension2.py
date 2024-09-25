@@ -41,3 +41,13 @@ names = ["stewart", "bobby", "danny"]
 name_dict = {name: len(name) for name in names}
 print(names)
 
+
+
+#creating a list of tuples
+name_lengths = [(name, len(name)) for name in names]
+print(f"list of tuples {name_lengths}")
+
+#using a conditional expression
+even_or_odd = ['even' if x % 2 == 0 else 'odd' for x in numList]
+
+#creating a dictionary with list comprehensions
