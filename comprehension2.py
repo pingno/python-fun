@@ -22,3 +22,10 @@ print(numList2)
 
 numList3 = [x**2 for x in numList if x%2 == 0] #power of 2
 print(numList3)
+
+# numList4 = [x^2 for x in numList] # isn't a power of 2, it's a bitwise operator
+# print(numList4)
+
+
+numList5 = [x/2 for x in numList]
+print(numList5) #0.5, 1.0, 2.0, 2.5
