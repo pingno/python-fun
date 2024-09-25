@@ -34,3 +34,10 @@ print(numList5) #0.5, 1.0, 2.0, 2.5
 numList6 = [f"this num is {x}" for x in numList]
 print(f"can you return a string interpolation in list comprehension?{x}" for x in numList6)
 #not done properly returns <generator object <genexpr> at .....>
+
+
+
+names = ["stewart", "bobby", "danny"]
+name_dict = {name: len(name) for name in names}
+print(names)
+
